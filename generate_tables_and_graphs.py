@@ -42,6 +42,18 @@ def generate_table_alg2(n_vals, empirical_rts):
 
 # --------------------- Graph Plots ---------------------
 
+def plot_alg1_vs_alg2(n, alg1, alg2):
+    plt.figure(figsize=(10, 6))
+    plt.plot(n, [t * 1000 for t in alg1], marker='o', label='ALG1: Brute Force')
+    plt.plot(n, [t * 1000 for t in alg2], marker='s', label='ALG2: Divide & Conquer')
+    plt.title('Graph 1: Empirical Runtime Comparison')
+    plt.xlabel('Input Size n')
+    plt.ylabel('Average Runtime (ms)')
+    plt.grid(True)
+    plt.legend()
+    plt.tight_layout()
+    plt.show()
+
 def plot_empirical_vs_predicted(n, empirical, predicted, title, label):
     plt.figure(figsize=(10, 6))
     plt.plot(n, [t * 1000 for t in empirical], marker='o', label=f'{label}: EmpiricalRT')
@@ -60,6 +72,9 @@ print("== Generating Tables and Graphs ==")
 alg1_theo, alg1_pred, c1 = generate_table_alg1(n_values, alg1_avg)
 alg2_theo, alg2_pred, c2 = generate_table_alg2(n_values, alg2_avg)
 
-# Plot Graphs 2 and 3
+# Graph 1: Empirical Runtime Comparison
+plot_alg1_vs_alg2(n_values, alg1_avg, alg2_avg)
+
+# Graphs 2 and 3: Empirical vs Predicted
 plot_empirical_vs_predicted(n_values, alg1_avg, alg1_pred, "ALG1: Empirical vs Predicted", "Brute Force")
 plot_empirical_vs_predicted(n_values, alg2_avg, alg2_pred, "ALG2: Empirical vs Predicted", "Divide & Conquer")
