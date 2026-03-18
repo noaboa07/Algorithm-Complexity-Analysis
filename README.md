@@ -31,4 +31,4 @@ The results clearly demonstrate the "crossover point" where the $\Theta(n \log n
 
 ---
 **Noah Russell** | Master of Science in AI (May 2026)
-[LinkedIn](https://www.linkedin.com/in/your-profile) | [Email](mailto:noahrussell2004@gmail.com)
+[LinkedIn](https://www.linkedin.com/in/noah-russell-61103128a/) | [Email](mailto:noahrussell2004@gmail.com)
