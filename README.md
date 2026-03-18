@@ -7,12 +7,12 @@ This project explores the practical performance differences between two fundamen
 
 ## 🧠 Algorithms Implemented
 
-### 1. Brute-Force ($\Theta(n^2)$)
+### 1. Brute-Force (Θ(n²))
 A baseline implementation that computes the Euclidean distance between every possible pair of points. While simple, the computational cost grows quadratically as $n$ increases, making it inefficient for large-scale geospatial data.
 
 
 
-### 2. Divide & Conquer ($\Theta(n \log n)$)
+### 2. Divide & Conquer (Θ(n log n))
 An optimized recursive approach that partitions the plane into halves, solves for each sub-problem, and efficiently processes the "strip" near the partition line. This implementation significantly reduces the search space, aligning with the theoretical $n \log n$ efficiency required for high-performance systems.
 
 
@@ -27,7 +27,7 @@ An optimized recursive approach that partitions the plane into halves, solves fo
 ---
 
 ## 📈 Key Findings
-The results clearly demonstrate the "crossover point" where the $\Theta(n \log n)$ optimization begins to drastically outperform the brute-force method. This project provides a real-world validation of how algorithmic scaling directly impacts system latency and resource consumption.
+The results clearly demonstrate the "crossover point" where the $\Theta(n \log n)$ optimization begins to drastically outperform the brute-force method. This project provides a real-world validation of how algorithmic scaling directly impacts system latency and resource consumption in production environments.
 
 ---
 **Noah Russell** | Master of Science in AI (May 2026)
